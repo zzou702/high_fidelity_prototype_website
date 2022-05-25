@@ -6,44 +6,91 @@
         <link rel="stylesheet" href="a2.css"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
-    <body> 
-        <!--
-        <nav
-            class="nav-topbar brand-colour">
-            <div>
-                <div 
-                    class="bar-item">
-                    <img src="logo2.png" style="width: 185px;"/>
-                </div>
-                <div 
-                    href="javascript:void(0)"
-                    class="bar-item"><i class="fa fa-home" aria-hidden="true"></i> 
-                    <h4>Home</h4></div>
-                <button class="reg-button nav-align">Login</button>
-                <button class="reg-button nav-align">Register</button>
-                <br>
-            </div>
-
-        </nav>
-        -->
+    <body id="main-menu"> 
         <header>
             <img src="logo.png" alt="logo" 
                 style="width: 310px; 
                 cursor: pointer;">
             <nav>
-                <ul class="bar-item2">
-                    <li><i class="fa fa-home"></i>Home</li>
-                    <li><i class="fa fa-calculator"></i>Calculate</li>
-                    <li>Offsetting<i class="fa fa-angle-down"></i></li>
-                    <li>Contact Us<i class="fa fa-angle-down"></i></li>
+                <ul class="bar-item">
+                    <li><i class="fa fa-home"></i><b> Home</b></li>
+                    <li><i class="fa fa-calculator"></i> Calculate</li>
+                    <li>Offsetting <i class="fa fa-angle-down"></i></li>
+                    <li>Contact Us <i class="fa fa-angle-down"></i></li>
                     <li>About</li>
                 </ul>
             </nav>
-            <button><b>Register</b></button>
+            <h2><button style="font-size: 19px;">Login<i class="fa fa-sign-in"></i></button></h2>
+            <h2><u>or</u></h2>
+            <a href="#form" id="trigger-modal"><button><b>Register</b></button></a>
         </header>
-        <div>
-            <img src="rainforest.png" alt="nothing" style="width: 100%;">
-            <h1>Never doubt the impact you can make</h1>
+        <div class="container brand-background-color">
+            <img src="rainforest.png" alt="nothing" style="width: 100%; opacity: 0.79;">
+            <div class="container-center color-white">
+                <h1 style="font-size: 50px;">Never doubt the impact you can make</h1>
+                <h2 class="brank-color">Reducing carbon emission and protecting our planet
+                    is not a one man's job, it needs the help from everyone
+                </h2>
+                <h2>Find out how you can make a difference</h2>
+                <br>
+                <offset-button class="offset-button">
+                    Offsetting
+                </offset-button>
+            </div>
+        </div>
+        <div class="conatiner" style="background-color: #ffffff;">
+            <h1>oaisjdoadjaosdijaosdjo</h1>
+        </div>
+
+        <!--registration form-->
+        <div class="overlay" id="form">
+            <div class="window">
+                <div class="reg-top-bar container">
+                    <h2>Register</h2>
+                    <a href="#" class="close-button"><i class="fa fa-times-thin fa-2x"></i></a>
+                </div>
+                <br><br>
+                <div id="ct-form">
+                    <form action="index.html">
+                        <div id="userDetails" class="container ">
+                            <h2>Your details</h2>
+                            <label>Given Name:</label>
+                            <input type="text" placeholder="Your firstname...">
+                            <label>Surname:</label>
+                            <input type="text" placeholder="Your lastname...">
+                            <label>Username:</label>
+                            <input type="text">
+                            <label>Password:</label>
+                            <input type="text" placeholder="Must be 8~16 characters">
+                        </div>
+                        <div id="addresses" class="container">
+                            <h2>Address</h2>
+                            <label>Home Address</label>
+                            <input type="text" placeholder="Address Line 1">
+                            <input type="text" placeholder="Suburb">
+                            <input type="text" placeholder="City">
+                            <input type="text" placeholder="State/province">
+                            <input type= "number" placeholder="Postcode">
+                            <label>Work Address</label>
+                            <input type="text" placeholder="Address Line 1">
+                            <input type="text" placeholder="Suburb">
+                            <input type="text" placeholder="City">
+                            <input type="text" placeholder="State/province">
+                            <input type= "number" placeholder="Postcode">
+                        </div>
+                        <div id="contacts" class="container">
+                            <h2>Contact</h2>
+                            <label>Mobile Number</label>
+                            <input type="number">
+                            <label>Email</label>
+                            <input type="text">
+                        </div>
+                        
+                        <button style="margin-left: 50%;">Register</button>
+                    </form>
+                </div>
+                
+            </div>
         </div>
     </body>
 </html>
