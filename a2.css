@@ -8,6 +8,12 @@
     background-color: #1D1E33;
 }
 
+.montserrat-font{
+    font-family: "Montserrat", serif;
+    color: #1D1E33;
+    text-decoration: none;
+}
+
 header{
     display: flex;
     justify-content: space-evenly;
@@ -26,7 +32,7 @@ header{
 }
 
 li,a{
-    font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat", serif;
     font-weight: 500;
     font-size: 22px;
     color: #1D1E33;
@@ -50,7 +56,7 @@ button{
     cursor: pointer;
     display: inline-block;
     font-size: 22px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, serif;
     color: #1D1E33;
     margin-right: 5%;
     transition: all 0.2s ease-in-out;
@@ -71,7 +77,7 @@ offset-button{
     cursor: pointer;
     display: inline-block;
     font-size: 22px;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat", serif;
     font-weight: 500;
     color: white;
     transition: all 0.2s ease-in-out;
@@ -125,12 +131,15 @@ html, body {
 }
 
 .window {
-	padding: 10px;
+	padding-left: 10px;
+    padding-right: 10px;
+	padding-bottom: 10px;
+    padding-top: 0%;
 	background: #ffffff;
 	width: 50%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 10%;
+    margin-top: 1%;
 	position: relative;
 	transition: all 5s ease-in-out;
 }
@@ -138,13 +147,13 @@ html, body {
 .reg-top-bar{
     text-align: center;
     background-color: #ffffff;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Arial", serif;
     font-weight: 500;
     font-size: 22px;
     text-decoration: none;
     width: 100%;
     top: 0;
-    height: 15%;
+    height: 80px;
     border-bottom-style: double;
     border-color: #1D1E33;
 }
@@ -168,10 +177,98 @@ html, body {
 	content: '\00d7';
 }
 
-
 form label{
     font-size: 22px;
     color: #1D1E33;
     letter-spacing: 2px;
 }
 
+input[type="text"]{
+    width: 100%;
+    height: 50px;
+	padding: 12px;
+	border: 1px solid #1D1E33;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+    font-size: 18px;
+}
+
+
+input[type="submit"]{
+    border: 6px #ffffff;
+    padding: 15px;
+    overflow: hidden;
+    background-color: #1D1E33;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 22px;
+    font-family: Verdana, Geneva, Tahoma, serif;
+    color: white;
+    transition: all 0.2s ease-in-out;
+    margin-bottom: 5px;
+}
+
+input[type="submit"]:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    background-color: #4E506A;
+    color: white;
+}
+
+.form-align{
+    text-align: left;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-bottom-style: double;
+}
+
+#givenName{
+    width: 48%;
+	padding: 12px;
+	border: 1px solid #1D1E33;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+    margin-right: 20px;
+	resize: vertical;
+}
+
+#lastName{
+    width: 49.2%;
+	padding: 12px;
+	border: 1px solid #1D1E33;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+    
+}
+
+#address{
+    width: 70%;
+	padding: 12px;
+	border: 1px solid #1D1E33;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+    margin-right: 20px;
+	resize: vertical;
+}
+
+#city{
+    width: 27.2%;
+	padding: 12px;
+	border: 1px solid #1D1E33;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+}
