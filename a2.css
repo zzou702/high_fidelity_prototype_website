@@ -75,34 +75,35 @@ button{
     display: inline-block;
     font-size: 22px;
     font-family: Verdana, Geneva, Tahoma, serif;
-    color: #1D1E33;
     margin-right: 5%;
-    transition: all 0.2s ease-in-out;
+    background: linear-gradient(to left, #ffffff 50%, #1D1E33 50%) right;
+    transition: 0.2s ease-in-out;
+    background-size: 200%;
 }
 
 button:hover{
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    background-color: #1D1E33;
-    color: white;
+    background-position: left;
+    color: white !important;
 }
 
 offset-button{
-    border: 6px #ffffff;
-    padding: 20px;
+    padding: 19px;
     overflow: hidden;
     text-align: center;
     cursor: pointer;
     display: inline-block;
-    font-size: 22px;
+    font-size: 25px;
     font-family: "Montserrat", serif;
-    font-weight: 500;
-    transition: all 0.2s ease-in-out;
+    background: linear-gradient(to left, #1D1E33 50%, #ffffff 50%) right;
+    transition: 0.4s ease-in-out;
+    background-size: 200%;
 }
 
 offset-button:hover{
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    background-color: #4E506A;
-    color: #ffffff;
+    background-position: left;
+    color: #1D1E33 !important;
 }
 
 html, body {
@@ -280,4 +281,16 @@ input[type="submit"]:hover{
     display: inline-block; 
     padding-left: 100px; 
     padding-right: 100px;
+}
+
+.icon-text-link{
+    font-family: 'Times New Roman', Times, serif;
+    box-shadow: inset 0 0 0 0 #1D1E33;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.icon-text-link:hover{
+    cursor: pointer;
+    box-shadow: inset 200px 0 0 0 #1D1E33;
+    color: #ffffff !important;
 }
