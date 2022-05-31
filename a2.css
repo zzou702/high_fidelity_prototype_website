@@ -8,11 +8,28 @@
     background-color: #1D1E33;
 }
 
+.analogous-brand-color{
+    color: #4E506A;
+}
+
+.analogous-brand-background-color{
+    background-color: #4E506A;
+}
+
+.color-white{
+    color: #ffffff;
+}
+
+.background-color-white{
+    background-color: #ffffff;
+}
+
 .montserrat-font{
     font-family: "Montserrat", serif;
-    color: #1D1E33;
     text-decoration: none;
 }
+
+
 
 header{
     display: flex;
@@ -22,7 +39,6 @@ header{
     width: 1920px;
     height: 110px;
     top: 0%;
-    background-color: #ffffff;
 }
 
 .bar-item li{
@@ -50,7 +66,6 @@ button{
     border: 6px #ffffff;
     padding: 15px;
     overflow: hidden;
-    background-color: white;
     text-align: center;
     border-radius: 20px;
     cursor: pointer;
@@ -72,14 +87,12 @@ offset-button{
     border: 6px #ffffff;
     padding: 20px;
     overflow: hidden;
-    background-color: #1D1E33;
     text-align: center;
     cursor: pointer;
     display: inline-block;
     font-size: 22px;
     font-family: "Montserrat", serif;
     font-weight: 500;
-    color: white;
     transition: all 0.2s ease-in-out;
 }
 
@@ -109,9 +122,12 @@ html, body {
     transform: translate(-50%, -50%);
 }
 
-.color-white{
-    color: #ffffff;
+.container-top-left{
+    position: absolute;
+    top: 10px;
+    left: 16px;
 }
+
 
 .overlay {
 	position: fixed;
@@ -136,7 +152,7 @@ html, body {
 	padding-bottom: 10px;
     padding-top: 0%;
 	background: #ffffff;
-	width: 50%;
+	width: 45%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 1%;
@@ -146,7 +162,6 @@ html, body {
 
 .reg-top-bar{
     text-align: center;
-    background-color: #ffffff;
     font-family: "Arial", serif;
     font-weight: 500;
     font-size: 22px;
@@ -178,14 +193,14 @@ html, body {
 }
 
 form label{
-    font-size: 22px;
+    font-size: 19px;
     color: #1D1E33;
     letter-spacing: 2px;
 }
 
 input[type="text"]{
     width: 100%;
-    height: 50px;
+    height: 43px;
 	padding: 12px;
 	border: 1px solid #1D1E33;
 	border-radius: 4px;
@@ -201,7 +216,7 @@ input[type="submit"]{
     border: 6px #ffffff;
     padding: 15px;
     overflow: hidden;
-    background-color: #1D1E33;
+    
     text-align: center;
     border-radius: 20px;
     cursor: pointer;
@@ -226,49 +241,28 @@ input[type="submit"]:hover{
     border-bottom-style: double;
 }
 
-#givenName{
-    width: 48%;
-	padding: 12px;
-	border: 1px solid #1D1E33;
-	border-radius: 4px;
-	box-sizing: border-box;
-	margin-top: 6px;
-	margin-bottom: 16px;
-    margin-right: 20px;
-	resize: vertical;
+.no-padding-bottom{
+    padding-bottom: 0% !important;
 }
 
-#lastName{
-    width: 49.2%;
-	padding: 12px;
-	border: 1px solid #1D1E33;
-	border-radius: 4px;
-	box-sizing: border-box;
-	margin-top: 6px;
-	margin-bottom: 16px;
-	resize: vertical;
-    
+.text-link{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
 }
 
-#address{
-    width: 70%;
-	padding: 12px;
-	border: 1px solid #1D1E33;
-	border-radius: 4px;
-	box-sizing: border-box;
-	margin-top: 6px;
-	margin-bottom: 16px;
-    margin-right: 20px;
-	resize: vertical;
+.text-link:hover{
+    color: #4E506A !important; 
+    cursor: pointer;
+    text-shadow: 0px 0.5px 0.5px #1D1E33;
 }
 
-#city{
-    width: 27.2%;
-	padding: 12px;
-	border: 1px solid #1D1E33;
-	border-radius: 4px;
-	box-sizing: border-box;
-	margin-top: 6px;
-	margin-bottom: 16px;
-	resize: vertical;
+#goal-panel{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+
+#goal-panel:hover{
+    color: #ffffff !important;
+    cursor: pointer;
+    text-shadow: 0 1px 2px #ffffff;
 }

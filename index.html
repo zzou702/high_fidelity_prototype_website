@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body id="main-menu"> 
-        <header>
+        <header class="background-color-white">
             <img src="logo.png" alt="logo" 
                 style="width: 310px; 
                 cursor: pointer;">
@@ -20,33 +20,108 @@
                     <li>About</li>
                 </ul>
             </nav>
-            <h2><button style="font-size: 19px;">Login<i class="fa fa-sign-in"></i></button></h2>
-            <h2><u>or</u></h2>
-            <a href="#form" id="trigger-modal"><button><b>Register</b></button></a>
+            <h2><button style="font-size: 19px;" 
+                        class="background-color-white">Login<i class="fa fa-sign-in"></i></button></h2>
+            <a href="#form" id="trigger-modal"><button class="background-color-white"><b>Register</b></button></a>
         </header>
-        <div class="container brand-background-color">
-            <img src="rainforest.png" alt="nothing" style="width: 100%; opacity: 0.79;">
+        <div class="container brand-background-color no-padding-bottom">
+            <img src="rainforest.png" alt="rainforest sunset image" style="width: 100%; opacity: 0.79;">
             <div class="container-center color-white">
-                <h1 style="font-size: 50px;">Never doubt the impact you can make</h1>
-                <h2 class="brank-color">Reducing carbon emission and protecting our planet
+                <h2 style="font-size: 50px;">Never doubt the impact you can make</h2>
+                <h2>Reducing carbon emission and protecting our planet
                     is not a one man's job, it needs the help from everyone
                 </h2>
                 <h2>Find out how you can make a difference</h2>
                 <br>
-                <offset-button class="offset-button">
+                <offset-button class="brand-background-color color-white">
                     Offsetting
                 </offset-button>
             </div>
         </div>
         <div class="conatiner" 
-                style="background-color: #1D1E33; width: 100%; height: 500px;">
-            <h1>oaisjdoadjaosdijaosdjo</h1>
+                style="width: 100%;">
+            <div class="container background-color-white" 
+                    style="width: 98%; text-align: left; margin-top: 60px;">
+                <img src="environmentalist.png" alt="environmentalist image" 
+                    style="float: left; margin-right: 90px; cursor: pointer;">
+                <h1 class="brand-color" 
+                    style="font-size: 50px; font-family: 'Times New Roman', Times, serif;">Who We Are</h1>
+                <h3 class="montserrat-font analogous-brand-color"
+                    style="font-size: 24px;">
+                    We are a group of young and enthusiastic individuals passionate about
+                    making a change and restore our mother nature to her purest form. 
+                </h3>
+                <h3 class="montserrat-font analogous-brand-color"
+                    style="font-size: 24px;">
+                    Working with our partners, together we have helped reducing almost 20% of total
+                    carbon output by our customers in 2021
+                </h3>
+                <br>
+                <h3 class="brand-color text-link">
+                    Find out more <b><i class="fa fa-angle-right" style="font-size: 28px;"></i></b></h3>
+            </div>
+            <div class="container analogous-brand-background-color"
+                style="width: 95.3%; text-align: left; padding-left: 90px;" >
+                <img src="rainforest2.png" alt="rainforest image" 
+                    style="float: right; width: 612px; height: 418px; margin-left: 2%; cursor: pointer;">
+                <h1 class="color-white" 
+                    style="font-size: 50px; font-family: 'Times New Roman', Times, serif;">
+                    What's our goal
+                </h1>
+                <h3 class="montserrat-font color-white"
+                    style="font-size: 24px;">
+                    We aim do the best we can to combat climate change that is destroying our planet
+                    And to do this, we need your help.
+                </h3>
+                <h3 class="montserrat-font color-white"
+                    style="font-size: 24px;">
+                    We aim to reduce the total yearly carbon footprint of New Zealand by 20% by 
+                    2027, you can help speed up this process by just knowing what your carbon footprint is first, 
+                    and we will work together!.
+                </h3>
+                <br>
+                <h3 class="color-white text-link" id="goal-panel">
+                    Find out your carbon footprint <i class="fa fa-angle-right" style="font-size: 28px;"></i></h3>
+            </div>
+            <div class="container brand-background-color" 
+                style="width: 100%; text-align: left;">
+                <img src="joinus.jpeg" alt="join us image" 
+                    style="float: left; margin-right: 90px; width: 619px; height: 440px; cursor: pointer;">
+                <h1 class="color-white" 
+                    style="font-size: 50px; font-family: 'Times New Roman', Times, serif;">
+                    Join Us!
+                </h1>
+                <h3 class="montserrat-font color-white"
+                    style="font-size: 24px; margin-left: 2%;">
+                    Join our big family of over 10,000 environment loving individuals 
+
+                </h3>
+                <h3 class="montserrat-font color-white"
+                    style="font-size: 24px;">
+                    We offer monthly tips on how to reduce carbon emission live a greener life according to many 
+                    aspects such as government policies, cost of living etc.
+                    We also strongly encourage you to participate in our monthly tree planting and ocean cleaning
+                    group.
+                </h3>
+                <h3 class="montserrat-font color-white"
+                    style="font-size: 24px;">
+                    Let us go climate positive and protect this planet together!
+                </h3>
+                <br>
+                <a href="#form" id="trigger-modal">
+                    <h3 class="color-white text-link" id="goal-panel">
+                    Join the family <i class="fa fa-angle-right"></i>
+                    </h3>
+                </a>                
+                
+            </div>
         </div>
+       
 
         <!--registration form-->
         <div class="overlay" id="form">
             <div class="window">
-                <div class="reg-top-bar container">
+                <div class="reg-top-bar container background-color-white">
                     <h2 style="font-family: Times;">Register</h2>
                     <a href="#" class="close-button"><i class="fa fa-times-thin fa-2x"></i></a>
                 </div>
@@ -55,10 +130,12 @@
                     <form action="index.html">
                         <div id="userDetails" class="container form-align">
                             <h2 style="text-align: center; padding-bottom: 0;">Your details</h2>
-                            <label style="margin-right: 34%;">Given Name:</label>
-                            <label>Surname:</label>
+                            <label>Given Name:</label>
                             <br>
                             <input type="text" placeholder="Your firstname..." id="givenName">
+                            <br>
+                            <label>Surname:</label>
+                            <br>
                             <input type="text" placeholder="Your lastname..." id="lastName">
                             <br>
                             <label>Username:</label>
@@ -73,26 +150,23 @@
                             <h2 style="text-align: center;">Address</h2>
                             <label>Home Address:</label>
                             <br>
-                            <input type="text" placeholder="Address Line 1..." id="address">
-                            <input type="text" placeholder="City" id="city">
-                            
+                            <input type="text" placeholder="Your home address...">
                             <br>
                             <label>Work Address:</label>
                             <br>
-                            <input type="text" placeholder="Address Line 1..." id="address">
-                            <input type="text" placeholder="City" id="city">
+                            <input type="text" placeholder="Your work address...">
                             
                         </div>
                         <div id="contacts" class="container form-align">
                             <h2 style="text-align: center;">Contact</h2>
                             <label>Mobile Number</label>
-                            <input type="text" placeholder="E.g. 123-456-7890">
+                            <input type="text" placeholder="E.g. +64 23 456 7890">
                             <label>Email</label>
                             <input type="text" placeholder="E.g. johnsmith@example.com">
                         </div>
                         <br>
                         <div class="container">
-                            <input type="submit" value="Register">
+                            <input type="submit" value="Register" class="brand-background-color color-white">
                         </div>
                     </form>
                 </div>
