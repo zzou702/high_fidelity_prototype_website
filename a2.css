@@ -42,6 +42,8 @@ header{
     width: 1920px;
     height: 110px;
     top: 0%;
+    z-index: 1000;
+    position: fixed;
 }
 
 .bar-item li{
