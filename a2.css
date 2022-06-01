@@ -145,6 +145,7 @@ html, body {
 	transition: opacity 500ms;
 	visibility: hidden;
 	opacity: 0;
+    z-index: 2000;
 }
 
 .overlay:target {
@@ -164,6 +165,7 @@ html, body {
     margin-top: 1%;
 	position: relative;
 	transition: all 5s ease-in-out;
+    z-index: 2000;
 }
 
 .reg-top-bar{
